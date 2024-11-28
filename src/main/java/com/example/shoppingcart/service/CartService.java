@@ -1,9 +1,9 @@
-package service;
+package com.example.shoppingcart.service;
 
-import model.Product;
+import com.example.shoppingcart.model.Product;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import repository.ProductRepository;
+import com.example.shoppingcart.repository.ProductRepository;
 
 import java.util.List;
 
@@ -25,8 +25,8 @@ public class CartService {
         return productRepository.findAll();
     }
 
-    public void removeProduct(String name) {
-        productRepository.deleteByName(name);
+    public void removeProduct(String id) {
+        productRepository.deleteById(Long.valueOf(id));
     }
 
     public void printProducts () {
@@ -45,7 +45,7 @@ public class CartService {
             total += product.calculateTotalPrice();
         }
         System.out.println("Scheduler total : " + (total*calculateTax()));
-        return total + calculateTax();
+        return total + (total*calculateTax());
     }
     public double discount(double price) {
         int discount = 0;

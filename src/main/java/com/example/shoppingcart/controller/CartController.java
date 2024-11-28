@@ -1,8 +1,8 @@
-package controller;
+package com.example.shoppingcart.controller;
 
-import model.Product;
+import com.example.shoppingcart.model.Product;
 import org.springframework.web.bind.annotation.*;
-import service.CartService;
+import com.example.shoppingcart.service.CartService;
 
 import java.util.List;
 
@@ -26,9 +26,9 @@ public class CartController {
     public List<Product> getCartProducts() {
         return service.getCartProducts();
     }
-    @DeleteMapping("/remove/{name}")
-    public void removeProduct(@PathVariable String name) {
-        service.removeProduct(name);
+    @DeleteMapping("/remove/{id}")
+    public void removeProduct(@PathVariable String id) {
+        service.removeProduct(id);
     }
     @GetMapping("/total")
     public double calculateCartTotal() {
