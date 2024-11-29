@@ -6,7 +6,6 @@ import com.example.shoppingcart.service.CartService;
 
 import java.util.List;
 
-
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/cart")

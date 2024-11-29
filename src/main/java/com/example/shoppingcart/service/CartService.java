@@ -52,7 +52,6 @@ public class CartService {
         double sale =  price - discount(0);
         return sale;
 
-
     }
 
 }
