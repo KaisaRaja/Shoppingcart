@@ -8,6 +8,4 @@ public class ShoppingcartApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ShoppingcartApplication.class, args);
 	}
-
-
 }
