@@ -25,8 +25,5 @@ Projekt on loodud õppimise eesmärgil ning kasutab JavaScripti ja HTML/CSS tehn
 2. Ava index.html fail oma veebilehitsejas.
 3. Proovi lisada tooteid ostukorvi ja hallata neid.
 
-Kontakt
-Kui on küsimusi või soovid tagasisidet, võid minuga ühendust võtta.
-
 Autor: Kaisa Raja 
 Projekti eesmärk: Õppimine
